@@ -52,7 +52,7 @@ def game_step(player):
 
     result = {
         key: (random.random() < val) for key,val in location.items()
-    }  #items ? location.items?
+    }  #items ? location.items? that comma thingy?
 
     show_dict(result)
     input("Press ENTER to continue")    
