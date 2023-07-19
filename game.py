@@ -1,6 +1,12 @@
 import random
 
-def create_player(): # adding characters with different stats.
+# make a dictonary with the character stats.
+
+stats = {"adventurer" : None, "health": None, "food": None, "sanity": None}
+
+
+# add characters with different stats - K
+def create_player(): 
   character = input("Choose an adventurer: Warrior, mage or ranger?").lower()
   if character not in ["warrior", "mage", "ranger"]:
     print("You actually managed to fail to choose a character!Well done Stanley!")
@@ -55,6 +61,8 @@ def game_step(player):
     }  #items ? location.items? that comma thingy?
 
     show_dict(result)
+
+    # will manipulate the dictionary created here in a way so that stats are saved for the character.  
     input("Press ENTER to continue")    
 
 def main():
