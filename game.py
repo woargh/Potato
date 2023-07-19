@@ -72,7 +72,7 @@ def main():
         print("Another day begins ##############################################")
         game_step(player)
 
-main()
+if __name__ == "__main__" 
 
 
 
